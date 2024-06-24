@@ -1,0 +1,508 @@
+
+body {
+    margin: 0px;
+    background-color: black;
+    color:white;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: fixed;
+    height: 11.5%;
+    width: 100%;
+    top: 0px;
+    right: -5px;
+    z-index: 1000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    transition: 0.5s;
+}
+
+.navbar li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: red;    
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    transition: 0.2s all linear;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+
+.navbar .logo, ul a{
+    padding: 50px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul{
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li{
+    position: relative;
+    display: inline;
+}
+
+.btn{
+    padding:0.7rem 2.5rem;
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    padding:0.7rem 2.5rem;
+    width:auto;
+    background-color: red;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+
+.logo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-shadow: 3px 3px 3px black;
+    text-decoration: none;
+}
+
+.bton{
+    padding:0.7rem 3.1rem;
+    width:auto;
+    background-color: red;
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.home-text .bton{
+    box-shadow: 3px 3px 5px black;
+}
+
+.bton:hover{
+    background: rgb(185,0,0);
+}
+
+section, .home-swiper{
+    padding: 4.5rem 0 1.5rem;
+}
+
+.home-swiper{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.container{
+    top:-72px;
+    width: 100%;
+    min-height: 865px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgb(2,3,7,0.4);
+}
+
+.container img{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.home-text{
+    margin-top: 500px;
+    margin-left: 50px;
+    z-index: 1000;
+    max-width: 400PX;
+    
+}
+
+.home-text span{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+}
+
+.home-text h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 3px black;
+}
+
+.swiper-pagination-bullet{
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 0.2rem !important;
+    background: white !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    width: 1.2rem !important;
+    background: red !important;
+}
+
+.heading{
+    max-width: 968px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+}
+
+.movies-container{
+    max-width: 968px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box-img {
+    width: 100%;
+    height: 270px;
+}
+
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+
+.box .box-img img:hover{
+    transform: translateY(-10px);
+    transition: all 0.1s linear;
+}
+
+.box h3{
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.box span{
+    font-size: 13px;
+}
+
+.coming-container{
+    display: grid;
+    gap: 1rem;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.coming-container .box-img img:hover{
+    transform: translateY(0);
+}
+
+.coming-container .box{
+    width: 100px;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.navbar.shadow {
+    background: black;
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+html::-webkit-scrollbar{
+    width: 0.3rem;
+    background: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5rem;
+}
+
+.contact-container{
+    max-width: 968px;
+    margin-left:auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.contact-container h2{
+    padding-top: 90px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.contact-container .bton{
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 3px 3px 5px black;
+}
+
+.contact-container form{
+    background: white;
+    border-radius: 0.5rem;
+    padding:10px 10px 10px 15px;
+}
+
+.contact-container .email{
+    border: 0;
+    outline: 0;
+    width: 280px;   
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000001;
+    display: none;
+}
+
+.footer{
+    padding-top: 100px;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .logo{
+    color: white;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+}
+
+.social .bx{
+    color: white;
+    padding: 2px;
+    font-size: 1.9rem;
+}
+
+.social #yt:hover{
+    color: red;
+}
+
+.social #fb:hover{
+    color: rgb(13, 0, 120);
+}
+
+.social #ig:hover{
+    color: rgb(213, 6, 103);
+}
+
+.social #tw:hover{
+    color: rgb(0, 166, 255, 0.862);
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.about{
+    margin-left: -30px;
+    min-height: 820px;
+    background-image: url("a1.jpg");
+    background-size: cover;
+    object-position: center;
+}
+
+.about-container{
+    margin-left: 50px;
+    margin-top: 200px;
+    
+}
+
+.about h1{
+    
+    max-width: 700px;
+    font-size: 3rem;
+    text-align: justify;
+    text-shadow: 2px 2px 4px black;
+}
+.about:hover{
+    transform: translateX(30px);
+    transition: 3s all linear;
+}
+
+.about h3{
+    
+    max-width: 700px;
+    text-align: justify;
+    text-shadow: 2px 2px 4px black;
+}
+
+@media (max-width:1040px){
+    section{
+        padding-right:4%;
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 970px) {
+    .home-text{
+        padding: 0px 5%;
+    }
+    #menu-icon{
+        text-align: center;
+        display: initial;
+        color: white;
+        
+    }
+    .icons{
+        margin-top: 0px;
+        position: absolute;
+        top:-500px;
+        left: 0;
+        right: -15px;
+        background: black;
+    }
+    .icons ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.2rem;
+        padding: 1.4rem;
+        box-shadow: 4px 4px 0 4px black;
+        transition: 0.2s all linear;
+        text-align: center;
+    }
+    .icons a:hover{
+        color: red;
+        border-bottom: 1px red solid;
+    }
+
+    .icons a::after{
+        display: none;
+    }
+    .icons a{
+        padding: 0;
+    }
+    .icons.active{
+        top: 100%;
+    }
+    .bton{
+        padding: 0.6rem 1.2rem;
+    }
+    
+}
+    
+
+
+@media (max-width: 840px){
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    }  
+
+    .about:hover{
+        transform: none;
+    }
+
+    .about h1{
+        font-size: 2.5rem;
+        transition: 0.5s all linear;
+    }
+
+    .about-container{
+        margin-top: 35%;
+        margin-right: 4%;
+        transition: 0.5s all linear;
+    }
+}
+
+@media (max-width: 480px){
+    .contact-container .email{
+        width: auto;
+    }
+    .contact-container .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container .details p{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.2rem;
+    }
+    .btn{
+        padding:0.7rem 2rem;
+    }
+    .btn:hover{
+        padding:0.7rem 2rem;
+    }
+    .about h1{
+        font-size: 2rem;
+        transition: 0.5s all linear;
+    }
+    .about h3{
+        font-size: 400;
+        font-weight: 100;
+        transition: 0.5s all linear;
+    }
+}
+
+@media (max-width:370px){
+    .btn{
+        padding:0.7rem 1.2rem;
+        margin-left: 2rem;
+    }
+    .btn:hover{
+        padding:0.7rem 1.2rem;
+        transition: 0.3s all linear;
+    }
+    .logo{
+        margin-left: -20px;
+        margin-right: -10px;
+        transition: 0.2s all linear;
+    }
+    .movies-container{
+        padding: 0px 5%;
+    }
+    .about-container{
+        margin-top: 45%;
+        margin-right: 5%;
+        transition: 0.5s all linear;
+    }
+}
+
